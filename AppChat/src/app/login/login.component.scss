@@ -1,0 +1,5 @@
+$loginWidth:30%;
+.login {
+  width: $loginWidth;
+  margin: 0 (100-$loginWidth)/2 0 (100-$loginWidth)/2;
+}

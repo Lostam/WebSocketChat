@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="left-side">
+    <h1>Logged In...</h1>
+    <div class="user-list" *ngFor="let user of data.users">{{user}}</div>
+  </div>
+  <div class="right-side">
+    <div class="chat-area">
+      <div *ngFor="let message of data.messages" class="message-box">
+        {{message.sender}}<strong>:</strong>{{message.message}}
+      </div>
+    </div>
+    <div class="chat-input">
+      <textarea (keydown)="messageEntered($event)" class="text-area" [(ngModel)]="inputText"></textarea>
+    </div>
+  </div>
+</div>
